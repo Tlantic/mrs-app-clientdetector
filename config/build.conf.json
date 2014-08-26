@@ -1,0 +1,5 @@
+{
+    "moduleDeployFile"      : "tlanjs_clientdetector_<%= pkg.version %>.js",
+    "minifiedDeployFile"    : "tlanjs_clientdetector_<%= pkg.version %>.min.js",
+    "obfuscate"             : true
+}

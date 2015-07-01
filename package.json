@@ -1,10 +1,10 @@
 {
-  "name": "mrs_client-detector",
+  "name": "mrs-app-clientdetector",
   "version": "0.1.0",
   "description": "Client detection for web and phonegap apps",
-  "main": "src/index.html",
-  "homepage": "http://www.mobileretailsuite.com/",
-  "author": "Pedro Simeão Carvalho",
+  "homepage": "http://github.com/Tlantic/mrs-app-clientdetector",
+  "repository": "http://github.com/Tlantic/mrs-app-clientdetector.git",
+  "author": "Tlantic MRS Team",
   "license": "BSD",
   "devDependencies": {
     "grunt": "^0.4.5",

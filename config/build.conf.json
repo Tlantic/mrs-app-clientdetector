@@ -1,5 +1,5 @@
 {
-    "moduleDeployFile"      : "tlanjs_clientdetector_<%= pkg.version %>.js",
-    "minifiedDeployFile"    : "tlanjs_clientdetector_<%= pkg.version %>.min.js",
+    "moduleDeployFile"      : "mrs-app-clientdetector.js",
+    "minifiedDeployFile"    : "mrs-app-clientdetector.min.js",
     "obfuscate"             : true
 }

@@ -1,9 +1,6 @@
 'use strict';
 
-/*
-  Date: 09/27/2013 
-  Author: Fábio Akira Yoshida <akira@tlantic.com.br>
-  
+/*  
     Description:    File for build based on Grunt package over NodeJS platform.
  */
 

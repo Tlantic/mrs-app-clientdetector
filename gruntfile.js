@@ -67,7 +67,7 @@ module.exports = function (grunt) {
                     line: true
                 },
                 process: true,
-                banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' + '<%= grunt.template.today("yyyy-mm-dd") %> */\n'
+                banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' + '<%= grunt.template.today("yyyy-mm-dd HH:MM:ss Z") %> */\n'
             },
             dist: {
                 src: ['src/*.js'],
@@ -79,7 +79,9 @@ module.exports = function (grunt) {
         uglify: {
             options: {
                 mangle: project.obfuscate,
-                banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' + '<%= grunt.template.today("yyyy-mm-dd") %> */\n'
+                sourceMap: project.obfuscate,
+                sourceMapName: 'dist/' + project.mapDeployFile,
+                banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' + '<%= grunt.template.today("yyyy-mm-dd HH:MM:ss Z") %> */\n'
             },
             dist: {
                 files: {

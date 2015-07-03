@@ -1,5 +1,6 @@
 {
     "moduleDeployFile"      : "mrs-app-clientdetector.js",
     "minifiedDeployFile"    : "mrs-app-clientdetector.min.js",
+    "mapDeployFile"         : "mrs-app-clientdetector.min.js.map",
     "obfuscate"             : true
 }

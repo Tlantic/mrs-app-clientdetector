@@ -1,23 +1,24 @@
 /**
-The client-detector is responsible to detect all information about browser.
-It is suitable for desktop and mobile detection.
-
-Provide client object in window.client.
-window.client = {
-    run: function,
-    screen: string,
-    browser: string,
-    browserVersion: string,
-    mobile: boolean,
-    os: string,
-    osVersion: string,
-    cookies: boolean
-};
-
-Based on http://jsfiddle.net/ChristianL/AVyND/ viazenetti GmbH (Christian Ludwig)
-
-@namespace MRS.Client-Detector
-@since 0.1.0
+ * 
+ * The client-detector is responsible to detect all information about browser.
+ * It is suitable for desktop and mobile detection.
+ * 
+ * Provide client object in window.client.
+ * window.client = {
+ *     run: function,
+ *     screen: string,
+ *     browser: string,
+ *     browserVersion: string,
+ *     mobile: boolean,
+ *     os: string,
+ *     osVersion: string,
+ *     cookies: boolean
+ * };
+ * 
+ * Based on http://jsfiddle.net/ChristianL/AVyND/ viazenetti GmbH (Christian Ludwig)
+ * 
+ * @namespace MRS.Client-Detector
+ * @since 0.1.0
 **/
 (function (window) {
 

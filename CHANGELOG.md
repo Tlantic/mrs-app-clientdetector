@@ -1,7 +1,10 @@
-TlanJS - Client Detector v0.1.x release notes
-==============================================
+# MRS.App - Client Detector release notes
 
-## v0.1.0 - Changelog
+## v1.0.0
+Change to MRS.App namespace.
+
+
+## v0.1.0
 
 First release.
 Detects:

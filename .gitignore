@@ -1,5 +1,3 @@
-
-/dist/
-/docs/
-/node_modules/
-/test/result/coverage/
+node_modules
+docs
+test/result

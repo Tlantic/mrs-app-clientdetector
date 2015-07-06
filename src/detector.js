@@ -158,31 +158,42 @@
 
         var osVersion = unknown;
 
-        switch (os) {
-            case 'Mac OS X':
-                osVersion = /Mac OS X (10[\.\_\d]+)/.exec(nAgt)[1];
-                break;
-
-            case 'Android':
-                osVersion = /Android ([\.\_\d]+)/.exec(nAgt)[1];
-                break;
-
-            case 'iOS':
-                osVersion = /OS (\d+)_(\d+)_?(\d+)?/.exec(nVer);
-                osVersion = osVersion[1] + '.' + osVersion[2] + '.' + (osVersion[3] | 0);
-                break;
-
-            case 'Windows Phone':
-                osVersion = /Windows Phone ([\.\_\d]+)/.exec(nAgt)[1];
-                break;
-                
-            default:
-                if (/Windows/.test(os)) {
-                    osVersion = /Windows (.*)/.exec(os)[1];
-                    os = 'Windows';
-                }
-                break;
+        // try to match OS version
+        try {
+            switch (os) {
+                case 'Mac OS X':
+                    osVersion = /Mac OS X (10[\.\_\d]+)/.exec(nAgt)[1];
+                    break;
+    
+                case 'Android':
+                    osVersion = /Android ([\.\_\d]+)/.exec(nAgt)[1];
+                    break;
+    
+                case 'iOS':
+                    osVersion = /OS (\d+)_(\d+)_?(\d+)?/.exec(nVer);
+                    osVersion = osVersion[1] + '.' + osVersion[2] + '.' + (osVersion[3] | 0);
+                    break;
+    
+                case 'Windows Phone':
+                    osVersion = /Windows Phone ([\.\_\d]+)/.exec(nAgt)[1];
+                    break;
+                    
+                default:
+                    if (/Windows/.test(os)) {
+                        osVersion = /Windows (.*)/.exec(os)[1];
+                        os = 'Windows';
+                    }
+                    break;
+            }
+        } catch(error) {
+            // do nothing
         }
+        
+        
+        // replace _ by . in OS version
+        osVersion = osVersion.replace(new RegExp('_', 'g'), '.');
+        
+        // all done!
 
         window.client = {
             run: run,
